@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyD9zip8QbARwYyJYR6EGlEec3M4kB8JmsE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>527792580262</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>michael.SwiftfulFirebaseBootcamp</string>
+	<key>PROJECT_ID</key>
+	<string>swiftfulfirebasebootcamp-5eee3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swiftfulfirebasebootcamp-5eee3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:527792580262:ios:0f1081792e55343c843667</string>
+</dict>
+</plist>
