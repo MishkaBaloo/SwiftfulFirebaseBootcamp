@@ -27,6 +27,10 @@ import SwiftUI
         try AuthenticationManager.shared.signOut()
     }
     
+    func deleteAccount() async throws {
+        try await AuthenticationManager.shared.delete()
+    }
+    
     func resetPassword() async throws {
         let authUser = try AuthenticationManager.shared.getAuthenticatedUser()
         
@@ -77,6 +81,17 @@ struct SettingsView: View {
                 Task {
                     do {
                         try viewModel.signOut()
+                        showSignInView = true
+                    } catch {
+                        print(error)
+                    }
+                }
+            }
+            
+            Button("Delete account", role: .destructive) {
+                Task {
+                    do {
+                        try await viewModel.deleteAccount()
                         showSignInView = true
                     } catch {
                         print(error)
