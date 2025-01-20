@@ -23,6 +23,7 @@
 		CEA18DD12C28C67C00D4FE3C /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA18DD02C28C67C00D4FE3C /* AuthenticationManager.swift */; };
 		CEA18DD32C28CC0600D4FE3C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA18DD22C28CC0600D4FE3C /* RootView.swift */; };
 		CEDAC6E22D3C3CA200E919AC /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAC6E12D3C3CA200E919AC /* SignInGoogleHelper.swift */; };
+		CEECEA902D3E909100FDCC5E /* SignInAppleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEECEA8F2D3E909100FDCC5E /* SignInAppleHelper.swift */; };
 		CEF5324F2D3C22AC0010A493 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEF5324E2D3C22AC0010A493 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		CEA18DD02C28C67C00D4FE3C /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		CEA18DD22C28CC0600D4FE3C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		CEDAC6E12D3C3CA200E919AC /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
+		CEECEA8F2D3E909100FDCC5E /* SignInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleHelper.swift; sourceTree = "<group>"; };
 		CEF5324D2D3C21300010A493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CEF5324E2D3C22AC0010A493 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				CEA18DD22C28CC0600D4FE3C /* RootView.swift */,
 				CE4CD5072D399FA100DCEBF7 /* SettingsView.swift */,
 				CEDAC6E12D3C3CA200E919AC /* SignInGoogleHelper.swift */,
+				CEECEA8F2D3E909100FDCC5E /* SignInAppleHelper.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				CEA18DCD2C28C32E00D4FE3C /* AuthenticationView.swift in Sources */,
 				CEA18DD12C28C67C00D4FE3C /* AuthenticationManager.swift in Sources */,
 				CE672E472D3C2CE700FB14CC /* Utilities.swift in Sources */,
+				CEECEA902D3E909100FDCC5E /* SignInAppleHelper.swift in Sources */,
 				CEA18DCF2C28C4E300D4FE3C /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
