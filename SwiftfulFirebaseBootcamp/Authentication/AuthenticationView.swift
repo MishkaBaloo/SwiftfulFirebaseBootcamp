@@ -11,8 +11,6 @@ import GoogleSignInSwift
 
 @MainActor final class AuthenticationViewModel: ObservableObject {
     
-    let signInAppleHelper = SignInAppleHelper()
-    
     func signInWithGoogle() async throws {
         let helper = SignInGoogleHelper()
         let tokens = try await helper.signIn()
@@ -24,6 +22,10 @@ import GoogleSignInSwift
         let tokens = try await helper.startSignInWithAppleFlow()
         try await AuthenticationManager.shared.signInWithApple(tokens: tokens)
     }
+    
+    func signInWithAnonymous() async throws {
+        try await AuthenticationManager.shared.signInAnonymous()
+    }
 }
 
 struct AuthenticationView: View {
@@ -33,17 +35,36 @@ struct AuthenticationView: View {
     
     var body: some View {
         VStack {
+            Button {
+                Task {
+                    do {
+                        try await viewModel.signInWithAnonymous()
+                        showSignInView = false
+                    } catch {
+                        print(error)
+                    }
+                }
+            } label: {
+                Text("Sign In Anonymously")
+                    .font(.headline)
+                    .foregroundStyle(Color.white)
+                    .frame(height: 55)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.orange)
+                    .clipShape(.rect(cornerRadius: 10))
+            }
+            
             NavigationLink {
                 SignInEmailView(showSignInView: $showSignInView)
             } label: {
-                    Text("Sign In With Email")
+                Text("Sign In With Email")
                     .font(.headline)
                     .foregroundStyle(Color.white)
                     .frame(height: 55)
                     .frame(maxWidth: .infinity)
                     .background(Color.blue)
                     .clipShape(.rect(cornerRadius: 10))
-                }
+            }
             
             GoogleSignInButton(viewModel: GoogleSignInButtonViewModel(scheme: .dark, style: .wide, state: .normal)) {
                 Task {
