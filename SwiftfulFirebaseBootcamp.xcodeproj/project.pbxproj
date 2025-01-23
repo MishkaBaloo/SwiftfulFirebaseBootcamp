@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1D6F2D2D42B57200031CA5 /* ProductDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D6F2C2D42B57200031CA5 /* ProductDatabase.swift */; };
+		CE1D6F302D42B59E00031CA5 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D6F2F2D42B59E00031CA5 /* ProductView.swift */; };
+		CE1D6F322D42B98D00031CA5 /* ProductsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D6F312D42B98D00031CA5 /* ProductsManager.swift */; };
+		CE1D6F352D42C23D00031CA5 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D6F342D42C23D00031CA5 /* ProductCellView.swift */; };
 		CE40D3882C1CBA19004CEDE9 /* SwiftfulFirebaseBootcampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40D3872C1CBA19004CEDE9 /* SwiftfulFirebaseBootcampApp.swift */; };
 		CE40D38A2C1CBA19004CEDE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40D3892C1CBA19004CEDE9 /* ContentView.swift */; };
 		CE40D38C2C1CBA1A004CEDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE40D38B2C1CBA1A004CEDE9 /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE1D6F2C2D42B57200031CA5 /* ProductDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDatabase.swift; sourceTree = "<group>"; };
+		CE1D6F2F2D42B59E00031CA5 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		CE1D6F312D42B98D00031CA5 /* ProductsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsManager.swift; sourceTree = "<group>"; };
+		CE1D6F342D42C23D00031CA5 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 		CE40D3842C1CBA19004CEDE9 /* SwiftfulFirebaseBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulFirebaseBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE40D3872C1CBA19004CEDE9 /* SwiftfulFirebaseBootcampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulFirebaseBootcampApp.swift; sourceTree = "<group>"; };
 		CE40D3892C1CBA19004CEDE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1D6F2E2D42B58600031CA5 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				CE1D6F2F2D42B59E00031CA5 /* ProductView.swift */,
+				CE1D6F332D42C22C00031CA5 /* Subviews */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		CE1D6F332D42C22C00031CA5 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				CE1D6F342D42C23D00031CA5 /* ProductCellView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		CE40D37B2C1CBA19004CEDE9 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				CE672E462D3C2CE700FB14CC /* Utilities.swift */,
+				CE1D6F2C2D42B57200031CA5 /* ProductDatabase.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -127,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA18DD22C28CC0600D4FE3C /* RootView.swift */,
+				CE1D6F2E2D42B58600031CA5 /* Product */,
 				CE801E3C2D40179B007B74DE /* Profile */,
 				CE801E322D4016BC007B74DE /* Authentication */,
 				CE801E2F2D401683007B74DE /* Settings */,
@@ -174,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				CE801E402D401E9E007B74DE /* UserManager.swift */,
+				CE1D6F312D42B98D00031CA5 /* ProductsManager.swift */,
 			);
 			path = Firestore;
 			sourceTree = "<group>";
@@ -280,10 +308,14 @@
 			files = (
 				CE801E342D401703007B74DE /* AuthenticationViewModel.swift in Sources */,
 				CE4CD5082D399FA100DCEBF7 /* SettingsView.swift in Sources */,
+				CE1D6F352D42C23D00031CA5 /* ProductCellView.swift in Sources */,
 				CE40D38A2C1CBA19004CEDE9 /* ContentView.swift in Sources */,
 				CE801E412D401E9E007B74DE /* UserManager.swift in Sources */,
+				CE1D6F302D42B59E00031CA5 /* ProductView.swift in Sources */,
 				CE40D3882C1CBA19004CEDE9 /* SwiftfulFirebaseBootcampApp.swift in Sources */,
 				CEA18DD32C28CC0600D4FE3C /* RootView.swift in Sources */,
+				CE1D6F322D42B98D00031CA5 /* ProductsManager.swift in Sources */,
+				CE1D6F2D2D42B57200031CA5 /* ProductDatabase.swift in Sources */,
 				CE801E3B2D40176D007B74DE /* SignInEmailViewModel.swift in Sources */,
 				CEDAC6E22D3C3CA200E919AC /* SignInGoogleHelper.swift in Sources */,
 				CEA18DCD2C28C32E00D4FE3C /* AuthenticationView.swift in Sources */,
