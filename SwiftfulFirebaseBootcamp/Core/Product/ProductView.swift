@@ -69,6 +69,15 @@ import FirebaseFirestore
             }
         }
     }
+    
+    func addUserFavoriteProduct(productId: Int) {
+        Task {
+            let authDataResult = try AuthenticationManager.shared.getAuthenticatedUser()
+            try? await UserManager.shared.addUserFavoriteProduct(userId: authDataResult.uid, productId: productId)
+        }
+    }
+    
+    
 //    func getProductsCount() {
 //        Task {
 //            let count = try await ProductsManager.shared.getAllProductsCount()
@@ -94,6 +103,11 @@ struct ProductView: View {
         List {
             ForEach(viewModel.products) { product in
                 ProductCellView(product: product)
+                    .contextMenu {
+                        Button("Add to favorites") {
+                            viewModel.addUserFavoriteProduct(productId: product.id)
+                        }
+                    }
                 
                 if product == viewModel.products.last {
                     ProgressView()
