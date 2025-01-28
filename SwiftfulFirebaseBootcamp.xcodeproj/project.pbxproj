@@ -32,6 +32,10 @@
 		CEA18DCF2C28C4E300D4FE3C /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA18DCE2C28C4E200D4FE3C /* SignInEmailView.swift */; };
 		CEA18DD12C28C67C00D4FE3C /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA18DD02C28C67C00D4FE3C /* AuthenticationManager.swift */; };
 		CEA18DD32C28CC0600D4FE3C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA18DD22C28CC0600D4FE3C /* RootView.swift */; };
+		CEB1D0B72D4986F200DE56AF /* Query+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1D0B62D4986F200DE56AF /* Query+EXT.swift */; };
+		CEB1D0BB2D49876800DE56AF /* OnFirstAppearViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1D0BA2D49876800DE56AF /* OnFirstAppearViewModifier.swift */; };
+		CEB1D0BD2D49879700DE56AF /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1D0BC2D49879700DE56AF /* FavoriteViewModel.swift */; };
+		CEB1D0BF2D4987D100DE56AF /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1D0BE2D4987D100DE56AF /* ProductsViewModel.swift */; };
 		CED22D612D45582A00E2616B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED22D602D45582A00E2616B /* TabBarView.swift */; };
 		CED22D642D455B1C00E2616B /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED22D632D455B1C00E2616B /* FavoriteView.swift */; };
 		CED22D662D45673E00E2616B /* ProductCellViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED22D652D45673E00E2616B /* ProductCellViewBuilder.swift */; };
@@ -61,6 +65,10 @@
 		CEA18DCE2C28C4E200D4FE3C /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
 		CEA18DD02C28C67C00D4FE3C /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		CEA18DD22C28CC0600D4FE3C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CEB1D0B62D4986F200DE56AF /* Query+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Query+EXT.swift"; sourceTree = "<group>"; };
+		CEB1D0BA2D49876800DE56AF /* OnFirstAppearViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstAppearViewModifier.swift; sourceTree = "<group>"; };
+		CEB1D0BC2D49879700DE56AF /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		CEB1D0BE2D4987D100DE56AF /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
 		CED22D602D45582A00E2616B /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		CED22D632D455B1C00E2616B /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		CED22D652D45673E00E2616B /* ProductCellViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellViewBuilder.swift; sourceTree = "<group>"; };
@@ -91,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				CE1D6F2F2D42B59E00031CA5 /* ProductView.swift */,
+				CEB1D0BE2D4987D100DE56AF /* ProductsViewModel.swift */,
 				CE1D6F332D42C22C00031CA5 /* Subviews */,
 			);
 			path = Product;
@@ -128,6 +137,8 @@
 				CEF5324D2D3C21300010A493 /* Info.plist */,
 				CE40D3872C1CBA19004CEDE9 /* SwiftfulFirebaseBootcampApp.swift */,
 				CE40D3892C1CBA19004CEDE9 /* ContentView.swift */,
+				CEB1D0B82D49873E00DE56AF /* Components */,
+				CEB1D0B52D4986DD00DE56AF /* Extensions */,
 				CE801E292D4015FE007B74DE /* Core */,
 				CE672E452D3C2CC600FB14CC /* Utilities */,
 				CEA18DCB2C28C31800D4FE3C /* Authentication */,
@@ -232,6 +243,30 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		CEB1D0B52D4986DD00DE56AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1D0B62D4986F200DE56AF /* Query+EXT.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEB1D0B82D49873E00DE56AF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1D0B92D49874400DE56AF /* ViewModifiers */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CEB1D0B92D49874400DE56AF /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1D0BA2D49876800DE56AF /* OnFirstAppearViewModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		CED22D5F2D45581E00E2616B /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				CED22D632D455B1C00E2616B /* FavoriteView.swift */,
+				CEB1D0BC2D49879700DE56AF /* FavoriteViewModel.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -339,6 +375,7 @@
 				CE1D6F302D42B59E00031CA5 /* ProductView.swift in Sources */,
 				CE40D3882C1CBA19004CEDE9 /* SwiftfulFirebaseBootcampApp.swift in Sources */,
 				CEA18DD32C28CC0600D4FE3C /* RootView.swift in Sources */,
+				CEB1D0BD2D49879700DE56AF /* FavoriteViewModel.swift in Sources */,
 				CE1D6F322D42B98D00031CA5 /* ProductsManager.swift in Sources */,
 				CE1D6F2D2D42B57200031CA5 /* ProductDatabase.swift in Sources */,
 				CE801E3B2D40176D007B74DE /* SignInEmailViewModel.swift in Sources */,
@@ -346,13 +383,16 @@
 				CEA18DCD2C28C32E00D4FE3C /* AuthenticationView.swift in Sources */,
 				CEA18DD12C28C67C00D4FE3C /* AuthenticationManager.swift in Sources */,
 				CE672E472D3C2CE700FB14CC /* Utilities.swift in Sources */,
+				CEB1D0BF2D4987D100DE56AF /* ProductsViewModel.swift in Sources */,
 				CE801E312D401691007B74DE /* SettingsViewModel.swift in Sources */,
 				CED22D642D455B1C00E2616B /* FavoriteView.swift in Sources */,
 				CEECEA902D3E909100FDCC5E /* SignInAppleHelper.swift in Sources */,
+				CEB1D0BB2D49876800DE56AF /* OnFirstAppearViewModifier.swift in Sources */,
 				CED22D662D45673E00E2616B /* ProductCellViewBuilder.swift in Sources */,
 				CE801E3E2D4017B0007B74DE /* ProfileView.swift in Sources */,
 				CED22D612D45582A00E2616B /* TabBarView.swift in Sources */,
 				CEA18DCF2C28C4E300D4FE3C /* SignInEmailView.swift in Sources */,
+				CEB1D0B72D4986F200DE56AF /* Query+EXT.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
